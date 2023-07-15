@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>謎のRPG</title>
+  <meta name="title" content="謎のRPGサイト" />
+  <meta name="description" content="謎のRPGをプレイできるかもしれないサイトです。" />
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./images/icon/te_maru.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/icon/te_maru.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  　
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  　
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
+
+  <script src="./js/main.js"></script>
+</head>
+
+<body bgcolor="#cccccc" text="#000000">
+  <div id="wrapper">
+    <section>
+      <font size="6" color="ff0000">
+        <p align="center">謎のRPG</p>
+      </font>
+    </section>
+    <div class="container">
+      <div id="character">
+        <canvas id="characterCanvas" width="100" height="100"></canvas>
+        <script src="./js/drawCharacter.js"></script>
+      </div>
+      <div id="status">
+        <p>名前: <span class="status-value" id="name">おまえ</span></p>
+        <p>職業: <span class="status-value" id="job">ベイビー</span></p>
+        <hr>
+        <p>Lv: <span class="status-value" id="level">1</span></p>
+        <!--<p>jobLv: </p>-->
+        <p>HP: <span class="status-value" id="hp">100</span></p>
+        <p>ATK: <span class="status-value" id="attack">10</span></p>
+        <p>DEF: <span class="status-value" id="defense">5</span></p>
+        <p>AGI: <span class="status-value" id="agility">5</span></p>
+        <p>LUK: <span class="status-value" id="luck">5</span></p>
+        <hr>
+        <p>exp: <span class="status-value" id="exp">0</span></p>
+        <p>sp: <span class="status-value" id="statPoints">0</span><span>p</span></p>
+      </div>
+      <button onclick="defeatMonster()">モンスターを倒す</button>
+      <button onclick="levelUp()">レベルアップ</button>
+      <button onclick="increaseAttack()">攻撃力を上げる</button>
+      <button onclick="increaseDefense()">防御力を上げる</button>
+    </div>
+
+
+    <br><br><br><br>
+    <!--footer-->
+    <footer>
+      <h3>プライバシーポリシー・免責事項</h3>
+      <p class="gray">
+        <span style="font-size: 10px;">
+          本サイトでは、サイトの分析と改善のためにGoogleが提供している「Google アナリティクス」を利用しています。
+          このサービスは、トラフィックデータの収集のためにCookie（クッキー）を使用しています。トラフィックデータは匿名で収集されており、個人を特定するものではありません。<br>
+          本サイトを利用するなどの行為に関連して生じたあらゆる損害等についても、理由の如何に関わらず、本サイトは一切の責任を負いかねますのでご了承ください。<br>
+        </span>
+      </p>
+    </footer>
+  </div>
+</body>
+
+</html>
